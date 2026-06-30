@@ -131,9 +131,10 @@ p{font-weight:400}
 .nowrap-lg{white-space:nowrap;font-size:clamp(1.7rem,3.6vw,2.7rem)}
 /* Fondus doux entre sections contrastees */
 #studio{background:linear-gradient(to bottom, var(--beige) 0, var(--beige-soft) 100%)}
-#offres{background:linear-gradient(to bottom, var(--beige-soft) 0, var(--noir) 120px, var(--noir) calc(100% - 120px), var(--beige) 100%)}
+#offres{background:linear-gradient(to bottom, var(--beige-soft) 0, var(--noir) 80px, var(--noir) calc(100% - 120px), var(--beige) 100%)}
 #equipe{background:linear-gradient(to bottom, var(--beige) 0, var(--blanc) 120px, var(--blanc) calc(100% - 120px), var(--beige-soft) 100%)}
-#contact{background:linear-gradient(to bottom, var(--beige-soft) 0, var(--noir) 120px, var(--noir) 100%)}
+#contact{background:linear-gradient(to bottom, var(--beige-soft) 0, var(--noir) 80px, var(--noir) 100%)}
+#offres, #contact{padding-top:clamp(6rem,10vw,7.5rem)}
 @media(max-width:680px){.nowrap-lg{white-space:normal}}
 
 /* Valeurs en carrousel defilant (vert sauge) */
@@ -223,6 +224,9 @@ p{font-weight:400}
   font-family:var(--font-texte);font-size:.95rem;color:var(--texte);background:var(--blanc);
 }
 .field input:focus,.field select:focus{outline:2px solid var(--chene);outline-offset:1px;border-color:var(--chene)}
+.field input[type="date"]{text-align:left;-webkit-appearance:none;appearance:none;min-height:48px}
+.field input[type="date"]::-webkit-date-and-time-value{text-align:left;margin:0}
+.field input[type="date"]::-webkit-calendar-picker-indicator{opacity:.5}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .consent{display:flex;gap:.7rem;align-items:flex-start;margin:1.2rem 0;font-size:.84rem;color:#5a564f;line-height:1.5}
 .consent input{margin-top:.25rem;width:18px;height:18px;accent-color:var(--cuivre);flex-shrink:0}
